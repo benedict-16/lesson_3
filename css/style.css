@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-image {
+  width: 100vw;
+  min-height: 100vh;
+  height: 100vh;
+  background-color: hwb(194 3% 60%);
+  background-image: url(../images/second-becground.png),
+    url(../images/bacground.jpg);
+  background-repeat: no-repeat;
+  background-position: 98% 10%, 50% 50%;
+  background-size: 100px, cover;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 20px 75px 20px;
+  margin: 0 auto;
+}
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(236, 237, 243, 0.253);
+  margin: 0 auto;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 2em 0;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: rgb(69, 166, 250);
+  background-color: rgb(57, 26, 87);
+  padding: 0.7em 1em;
+  font-size: 1.5rem;
+}
+
+.navbar-item:hover {
+  color: springgreen;
+  transition: color 1s;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.font {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(229, 238, 243);
+  text-decoration: none;
+  border-bottom: solid;
+}
+
+.text-articles {
+  padding: 5px;
+  background-color: rgba(75, 0, 130, 0.1);
+  width: 400px;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: lawngreen;
+}
+
+.change-color {
+  color: rgb(214, 211, 18);
+}
+
+h1 {
+  text-align: center;
+}
+
+.first-simbol::first-letter {
+  color: red;
+  font-size: 2em;
+}
+
+.list-catalog {
+  list-style: outside
+    url(https://findicons.com/files/icons/731/green_and_blue/32/emoticons.png);
+  font-size: 30px;
+  background-color: rgb(192, 217, 229);
+  color: brown;
+  font-weight: 700;
+  display: flex;
+  gap: 2em;
+  padding: 1em 2em;
+  justify-content: space-around;
+}
+
+.sublist {
+  list-style: outside
+    url(https://findicons.com/files/icons/2625/google_plus_interface_icons/18/emoticon_smile.png);
+  font-size: 20px;
+  color: rgb(76, 121, 4);
+  background-color: rgb(245, 253, 199);
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 37px;
+}
+
+.new::after {
+  content: "new";
+  background: orange;
+  color: aliceblue;
+  font-size: 70%;
+  padding: 2px;
+  margin-left: 2px;
+}
+
+.texture {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background-color: rgb(255, 193, 78);
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/texture.jpg);
+  background-size: 500px;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+.border {
+  border: solid;
+  border-width: 8px;
+}
+
+.border:hover {
+  color: rgba(240, 248, 255, 0);
+}
+
+.position {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 10px;
+}
+
+.form-group {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.form-group-sm {
+  border: dashed;
+  color: rgba(0, 0, 0, 0);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.form-group-sm:hover {
+  border: dashed;
+  color: aqua;
+}
+
+.black {
+  color: black;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px auto;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 30px auto;
+  background-color: lightsteelblue;
+}
+
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 0.3em 0.75em;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 33vh;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+}
+
+.big-simbol {
+  text-transform: capitalize;
+}
+
+.footer {
+  height: 70px;
+  background-color: rgba(223, 212, 231, 0.5);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+}

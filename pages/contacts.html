@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div class="bg-image"></div>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a class="navbar-item" href="../index.html">Головна</a>
+        <a class="navbar-item" href="articles.html">Статті</a>
+        <a class="navbar-item" href="catalog.html">Каталог</a>
+        <a class="navbar-item" href="gallery.html">Галерея</a>
+        <a class="navbar-item" href="page-nav.html">Навігація</a>
+        <a class="navbar-item" href="registration.html">Реєстрація</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="bg-overlay"></div>
+    <h1>Контакти</h1>
+    <h2>Адреса:</h2>
+    <p>м. Лондон, вул. Бейкерстритт, буд 221б</p>
+    <iframe id="mape" title="mape" width="500" height="500"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+    </iframe>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+      <fieldset>
+        <legend>Зворотній зв`язок</legend>
+        <div class="form-group">
+          <label for="name">Ім`я</label>
+          <input id="name" name="name" type="text" placeholder="Ввудіть ім`я">
+        </div>
+        <div class="form-group">
+          <label for="tel">Телефон</label>
+          <input id="tel" name="tel" type="tel" placeholder="Номер телефону">
+        </div>
+        <div class="form-group">
+          <label for="email">Адреса електронної пошти</label>
+          <input id="email" name="email" type="email" placeholder="Ввудіть email">
+        </div>
+        <div class="form-group">
+          <label for="question">Задати питання</label>
+          <textarea id="question" name="question" placeholder="Задати питання" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <input class="btn" name="submit" type="submit" value="Відправити">
+          <input class="btn" name="reset" type="reset" value="Очистити форму">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">&copy; Ivan Chipchyk</div>
+  </footer>
+</body>
+
+</html>
